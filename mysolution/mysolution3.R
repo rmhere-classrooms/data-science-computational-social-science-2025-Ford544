@@ -2,7 +2,7 @@ library(shiny)
 library(bslib)
 
 library(igraph)
-dfGraph <- read.csv2("C:\\Users\\Michal\\Downloads\\sieci\\out.radoslaw_email_email", skip=2, sep= " ")[, 1:2]
+dfGraph <- read.csv2("https://bergplace.org/share/out.radoslaw_email_email", skip=2, sep= " ")[, 1:2]
 g <- graph_from_data_frame(dfGraph, directed = TRUE)
 g <- simplify(g)
 summary(g)
